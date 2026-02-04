@@ -118,6 +118,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
+import os
+import random
+
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [BASE_DIR / "static my project", ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static cdn", "static root")
+
+MEDIA_URL = 'media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "static cdn", "media root")
+
 
 CORS_ALLOW_ALL_ORIGINS = True
