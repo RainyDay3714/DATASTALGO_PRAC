@@ -133,3 +133,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static cdn", "media root")
 
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+SECRET_KEY = os.getenv('SECRET_KEY')
+DEBUG = os.getenv('DEBUG') == 'True'
