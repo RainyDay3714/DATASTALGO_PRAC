@@ -12,7 +12,7 @@ const reducer = combineReducers ({
 const store = configureStore({
   reducer,
   // initialState, (no need for initialState here, Redux Toolkit handles it)
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middleware),
+  // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middleware),
 })
 
 export default store
