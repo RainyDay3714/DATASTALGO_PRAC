@@ -1,9 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { thunk } from 'redux-thunk'
+import { productListReducer } from './reducers/productsReducers'
 
-const reducer = {
-
-}
+const reducer = combineReducers ({
+  productList: productListReducer,
+})
 
 const initialState = {
 
