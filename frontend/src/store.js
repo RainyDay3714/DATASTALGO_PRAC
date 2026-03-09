@@ -5,15 +5,13 @@ const reducer = combineReducers ({
   productList: productListReducer,
 })
 
-const initialState = {
+// const initialState = {
 
-}
-
-const middleware = [thunk]
+// }
 
 const store = configureStore({
   reducer,
-  initialState,
+  // initialState, (no need for initialState here, Redux Toolkit handles it)
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middleware),
 })
 
