@@ -1,5 +1,4 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import { thunk } from 'redux-thunk'
 import { productListReducer } from './reducers/productsReducers'
 
 const reducer = combineReducers ({
